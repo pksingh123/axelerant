@@ -26,9 +26,8 @@ use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 class PageNodeRestResource extends ResourceBase {
 
   public function get($siteapikey = NULL, $nid = NULL) {
-    // You must to implement the logic of your REST Resource here.
-    // Use current user after pass authentication to validate access.
-
+    
+    
     $site_config = \Drupal::config('system.site');
     $system_siteapikey = $site_config->get('siteapikey');
 
